@@ -21,4 +21,4 @@ jobs:
         cat goldbach.f
         gcc -o goldbach goldbach.f -Os -march=native -w
         ./goldbach
-	24
+        24
