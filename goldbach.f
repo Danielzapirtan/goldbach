@@ -1,6 +1,6 @@
 	implicit integer*4(a-z)
 	nmin=6
-	read *,qmax
+	qmax=24
 	nmax=2**qmax
 	do 1 n=nmin,nmax,2
 	p=3
