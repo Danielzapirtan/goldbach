@@ -22,5 +22,4 @@ jobs:
           ulimit -t 18000
           cat goldbach.f
           gfortran -o goldbach goldbach.f -w -march=native -O4
-          ./goldbach
-          24
+          ./goldbach <<< 24
