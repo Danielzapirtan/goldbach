@@ -8,18 +8,18 @@ jobs:
     name: Bench Job
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Preparations
-      run: |
-        sudo apt update
-        sudo apt install -y gfortran build-essential
-
-    - name: Execution
-      run: |
-        ulimit -t 18000
-        cat goldbach.f
-        gcc -o goldbach goldbach.f -Os -march=native -w
-        ./goldbach <<< 24
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+ 
+      - name: Preparations
+        run: |
+          sudo apt update
+          sudo apt install -y gfortran build-essential
+ 
+      - name: Execution
+        run: |
+          ulimit -t 18000
+          cat goldbach.f
+          gcc -o goldbach goldbach.f -Os -march=native -w
+          ./goldbach <<< 24
