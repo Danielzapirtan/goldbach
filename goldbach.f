@@ -1,4 +1,4 @@
-	implicit integer*4(a-z)
+	implicit integer*8(a-z)
 	nmin=6
 	read *,qmax
 	nmax=2**qmax
