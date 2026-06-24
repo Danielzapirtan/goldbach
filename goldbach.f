@@ -1,4 +1,4 @@
-	implicit integer*8(a-z)
+	implicit integer*16(a-z)
 	read *,mult
 	nmin=(mult-1)*2**29
 	nmax=mult*2**29
