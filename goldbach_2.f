@@ -80,7 +80,7 @@
 	logical exitst
 	call inittab(tabpr)
 	a=6
-	b=2**24
+	b=2**27
 	exitst=gbnab(a,b,tabpr).eq.1
 	print *,exitst
 	stop
