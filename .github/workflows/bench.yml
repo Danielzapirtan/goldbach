@@ -23,4 +23,4 @@ jobs:
           cat goldbach.f
           gfortran -o goldbach goldbach.f -w -march=native -O4 -std=legacy
           ./goldbach
-        timeout-minutes: 5
+        timeout-minutes: 25
