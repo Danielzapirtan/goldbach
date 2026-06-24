@@ -19,7 +19,6 @@ jobs:
  
       - name: Execution
         run: |
-          ulimit -t 18000
           cat goldbach.f
           gfortran -o goldbach goldbach.f -w -march=native -O4 -std=legacy
           ./goldbach
