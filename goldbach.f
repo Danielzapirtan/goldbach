@@ -1,1 +1,1 @@
-goldbach_1.f
+goldbach_2.f
