@@ -16,7 +16,7 @@
 
 	subroutine inittab(tabpr)
 	implicit integer*16(a-z)
-	dimension tabpr(16384)
+	dimension tabpr(1)
 	p=3
 	ix=1
 	tabpr(ix)=2
@@ -33,7 +33,7 @@
 
 	function pr(p, tabpr)
 	implicit integer*16(a-z)
-	dimension tabpr(16384)
+	dimension tabpr(1)
 	ix=2
 1	continue
 	k=tabpr(ix)
@@ -52,7 +52,7 @@
 
 	function gbn(n,tabpr)
 	implicit integer*16(a-z)
-	dimension tabpr(16384)
+	dimension tabpr(1)
 	do 1 p=3,n/2,2
 	if(pr(p,tabpr).eq.0) goto 1
 	if(pr(n-p,tabpr).eq.0) goto 1
@@ -65,7 +65,7 @@
 
 	function gbnab(a,b,tabpr)
 	implicit integer*16(a-z)
-	dimension tabpr(16384)
+	dimension tabpr(1)
 	do 1 n=a,b,2
 	if(gbn(n,tabpr).eq.1) goto 1
 	gbnab=0
