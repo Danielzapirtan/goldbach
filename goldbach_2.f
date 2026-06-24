@@ -76,7 +76,7 @@
 	end
 
 	implicit integer*16(a-z)
-	dimension tabpr(16384)
+	dimension tabpr(32768)
 	logical exitst
 	call inittab(tabpr)
 	a=6
