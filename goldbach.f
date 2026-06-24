@@ -1,7 +1,7 @@
 	implicit integer*8(a-z)
-	nmin=6
-	read *,qmax
-	nmax=2**qmax
+	read *,mult
+	nmin=(mult-1)*2**28
+	nmax=mult*2**28
 	do 1 n=nmin,nmax,2
 	p=3
 7	continue
