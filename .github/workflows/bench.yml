@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       c:
-        description: 'Slice index'
+        description: 'Slice index (to 26)'
         type: number
         required: true
         default: 10
