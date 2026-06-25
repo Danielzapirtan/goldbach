@@ -80,7 +80,7 @@
 	logical exitst
 	read *,c
 	call inittab(tabpr)
-	slice=2**27
+	slice=2**26
 	a=(c-1)*slice
 	b=c*slice
 	exitst=gbnab(a,b,tabpr).eq.1
