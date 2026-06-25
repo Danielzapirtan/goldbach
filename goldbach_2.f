@@ -78,7 +78,7 @@
 	implicit integer*16(a-z)
 	dimension tabpr(32768)
 	logical exitst
-	accept *,c
+	read *,c
 	call inittab(tabpr)
 	slice=2**27
 	a=(c-1)*slice
