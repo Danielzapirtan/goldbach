@@ -78,9 +78,11 @@
 	implicit integer*16(a-z)
 	dimension tabpr(32768)
 	logical exitst
+	accept *,c
 	call inittab(tabpr)
-	a=6
-	b=2**27
+	slice=2**27
+	a=(c-1)*slice
+	b=c*slice
 	exitst=gbnab(a,b,tabpr).eq.1
 	print *,exitst
 	stop
