@@ -65,7 +65,8 @@
 	end
 
 	implicit integer*16(a-z)
-	do 1 p=7,10**8,2
+	read *,c
+	do 1 p=7,10**c,2
 	if (examp(p).eq.0) goto 2
 	print *,p
 2	continue
