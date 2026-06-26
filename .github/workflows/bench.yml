@@ -2,6 +2,12 @@ name: Goldbach
 
 on:
   workflow_dispatch:
+    inputs:
+      c:
+        description: 'Slice index (to 25)'
+        type: number
+        required: true
+        default: 10
 
 jobs:
   bench:
@@ -21,5 +27,5 @@ jobs:
         run: |
           cat goldbach.f
           gfortran -o goldbach goldbach.f -w -march=native -O4 -std=legacy
-          ./goldbach
+          ./goldbach <<< ${{ inputs.c }}
         timeout-minutes: 25
