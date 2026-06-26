@@ -71,6 +71,7 @@
 	print *,p
 2	continue
 1	continue
+	print *,'EOF'
 	stop
 	end
 
